@@ -123,9 +123,9 @@ try {
   // Math.PI/2 를 x/y/z 중 해당 축에 넣으면 됨).
   const MODEL_SOURCES = [
     { src: './rose.glb',  rotationFix: { x: 0, y: 0, z: 0 } },
-    { src: './rose2.glb', rotationFix: { x: 0, y: 0, z: 0 } },
-    { src: './rose3.glb', rotationFix: { x: 0, y: 0, z: 0 } },
-    { src: './rose4.glb', rotationFix: { x: 0, y: 0, z: 0 } },
+    { src: './rose2.glb', rotationFix: { x: 0.1899, y: -0.0922, z: -0.9017 } },
+    { src: './rose3.glb', rotationFix: { x: -0.5315, y: 0.6288, z: -1.7477 } },
+    { src: './rose4.glb', rotationFix: { x: -0.1682, y: 0.0129, z: -0.153 } },
   ];
   const loader = new GLTFLoader();
   const loadedModels = []; // { scene, autoScale, rotationFix }
