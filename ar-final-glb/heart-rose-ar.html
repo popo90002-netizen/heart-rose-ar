@@ -44,11 +44,11 @@ try {
 
   const { renderer, scene, camera } = mindarThree;
 
-  scene.add(new THREE.AmbientLight(0xffffff, 1.1));
-  const dirLight = new THREE.DirectionalLight(0xffffff, 1.3);
+  scene.add(new THREE.AmbientLight(0xffffff, 1.9));
+  const dirLight = new THREE.DirectionalLight(0xffffff, 2.1);
   dirLight.position.set(1, 3, 2);
   scene.add(dirLight);
-  const fillLight = new THREE.DirectionalLight(0xffe8e0, 0.6);
+  const fillLight = new THREE.DirectionalLight(0xffe8e0, 1.1);
   fillLight.position.set(-2, 1, -1);
   scene.add(fillLight);
 
@@ -115,7 +115,7 @@ try {
   let loadedRose = null;
 
   const loader = new GLTFLoader();
-  loader.load('./model/rose.glb', (gltf) => {
+  loader.load('./rose.glb', (gltf) => {
     loadedRose = gltf.scene;
     tryStartLoadingRoses();
   }, undefined, (err) => {
